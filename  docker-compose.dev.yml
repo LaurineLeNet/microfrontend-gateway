@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  gateway:
+    image: nginx:alpine
+    container_name: gateway-dev
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

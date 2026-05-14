@@ -1,0 +1,16 @@
+<table class="inventaire-table">
+  <thead>
+    <tr>
+      <th>Équipement</th>
+      <th>Quantité</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of inventaire; track item.nom) {
+      <tr>
+        <td>{{ item.nom }}</td>
+        <td>{{ item.quantite }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
