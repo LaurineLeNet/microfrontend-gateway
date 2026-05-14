@@ -1,0 +1,27 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "mf-gateway",
+	"main": "./src/index.ts",
+	"compatibility_date": "2026-05-15",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"services": [
+		{
+			"binding": "MUSCU",
+			"service": "mf-gateway-muscu"
+		},
+		{
+			"binding": "BASSIN",
+			"service": "mf-gateway-bassin"
+		}
+	]
+	//  "assets": {
+	//    "directory": "./dist",
+	//    "not_found_handling": "single-page-application"
+	//  }
+}
