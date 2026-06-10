@@ -19,9 +19,9 @@
 			"binding": "BASSIN",
 			"service": "mf-gateway-bassin"
 		}
-	]
-	//  "assets": {
-	//    "directory": "./dist",
-	//    "not_found_handling": "single-page-application"
-	//  }
+	],
+	"assets": {
+		"directory": "./assets",
+		"binding": "ASSETS"
+	}
 }
